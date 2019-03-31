@@ -2528,3 +2528,24 @@ class MyriadcoinTestnet(Myriadcoin):
     WIF_BYTE = bytes.fromhex("ef")
     GENESIS_HASH = ('0000017ce2a79c8bddafbbe47c004aa9'
                     '2b20678c354b34085f62b762084b9788')
+    
+    
+class Zeon(Coin):
+    NAME = "Zeon"
+    SHORTNAME = "ZEON"
+    NET = "mainnet"
+    P2PKH_VERBYTE = bytes.fromhex("26")
+    P2SH_VERBYTES = [bytes.fromhex("05")]
+    WIF_BYTE = bytes.fromhex("a6")
+    GENESIS_HASH = ('00000c9c83e5970601b5af203855c305a7e426deb667e6a8b3d1e1f66b52d220')
+    TX_COUNT = 316796
+    TX_COUNT_HEIGHT = 2040250
+    TX_PER_BLOCK = 2
+    RPC_PORT = 21944
+    REORG_LIMIT = 1000
+    
+    
+    
+    
+    
+    
