@@ -2534,15 +2534,19 @@ class Zeon(Coin):
     NAME = "Zeon"
     SHORTNAME = "ZEON"
     NET = "mainnet"
-    P2PKH_VERBYTE = bytes.fromhex("26")
-    P2SH_VERBYTES = [bytes.fromhex("05")]
-    WIF_BYTE = bytes.fromhex("a6")
+    XPUB_VERBYTES = bytes.fromhex("023d3537")
+    XPRV_VERBYTES = bytes.fromhex("0231512a")
+    P2PKH_VERBYTE = bytes.fromhex("50")
+    P2SH_VERBYTES = [bytes.fromhex("12")]
+    WIF_BYTE = bytes.fromhex("e9")
     GENESIS_HASH = ('00000c9c83e5970601b5af203855c305a7e426deb667e6a8b3d1e1f66b52d220')
-    TX_COUNT = 316796
-    TX_COUNT_HEIGHT = 2040250
-    TX_PER_BLOCK = 2
+    TX_COUNT = 1343196
+    TX_COUNT_HEIGHT = 223866
+    TX_PER_BLOCK = 6
     RPC_PORT = 21944
     REORG_LIMIT = 1000
+    PEER_DEFAULT_PORTS = {'t': '51001', 's': '51002'}
+    
     
     
     
