@@ -93,3 +93,6 @@ Supported Coins
 - Zcash - ZEC
 - Zclassic - ZCL
 - ZelCash - ZEL
+- Zeon - ZEON
+
+
