@@ -2540,9 +2540,9 @@ class Zeon(Coin):
     P2SH_VERBYTES = [bytes.fromhex("12")]
     WIF_BYTE = bytes.fromhex("e9")
     GENESIS_HASH = ('00000c9c83e5970601b5af203855c305a7e426deb667e6a8b3d1e1f66b52d220')
-    TX_COUNT = 1343196
+    TX_COUNT = 223866
     TX_COUNT_HEIGHT = 223866
-    TX_PER_BLOCK = 6
+    TX_PER_BLOCK = 1
     RPC_PORT = 21944
     REORG_LIMIT = 1000
     PEER_DEFAULT_PORTS = {'t': '51001', 's': '51002'}
