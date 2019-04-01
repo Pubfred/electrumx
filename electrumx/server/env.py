@@ -30,7 +30,7 @@ class Env(EnvBase):
     # Peer discovery
     PD_OFF, PD_SELF, PD_ON = range(3)
 
-    def __init__(self, coin=Zeon):     //None
+    def __init__(self, coin=None):     //None
         super().__init__()
         self.obsolete(['UTXO_MB', 'HIST_MB', 'NETWORK'])
         self.db_dir = self.required('DB_DIRECTORY')
