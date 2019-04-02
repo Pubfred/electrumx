@@ -2547,6 +2547,11 @@ class Zeon(Coin):
     REORG_LIMIT = 1000
     PEER_DEFAULT_PORTS = {'t': '51001', 's': '51002'}
     
+    @classmethod
+    def header_hash(cls, header):
+        '''Given a header return the hash.'''
+        import zeon_hash
+        return zeon_hash.getPoWHash(header)
     
     
     
