@@ -449,7 +449,19 @@ class DeserializerReddcoin(Deserializer):
 
         return TxTime(version, time, inputs, outputs, locktime)
 
+    
+class DeserializerZeon(Deserializer):
+    def read_tx(self):
+        version = self._read_le_int32()
+        time = self._read_le_uint32()
+        inputs = self._read_inputs()
+        outputs = self._read_outputs()
+        locktime = self._read_le_uint32()
+                
+        return TxTime(version, time, inputs, outputs, locktime)
 
+    
+    
 class DeserializerTxTimeAuxPow(DeserializerTxTime):
     VERSION_AUXPOW = (1 << 8)
 
